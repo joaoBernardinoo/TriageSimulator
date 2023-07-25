@@ -24,11 +24,11 @@ Para o controle de leitos, a fim de respeitar a atribuição de leitos recenteme
 
 ```mermaid
 classDiagram
-      cWaitLine o-- "1"cStack
-      cStack o-- "50"cBed
-      cNode o-- "1" cPacient
-      cQueue o-- "*" cNode
-      cWaitLine o-- "3"cQueue
+      cWaitLine --o "1"cStack
+      cStack --o "50"cBed
+      cNode --o "1" cPacient
+      cQueue --o "*" cNode
+      cWaitLine --o "3"cQueue
       
       
       waitRoom <--> cWaitLine:Movimentação de pacientes e leitos
